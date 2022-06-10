@@ -121,7 +121,7 @@ abstract class BiometricAuthenticator(
                 listener.onNewMessage("Providing instance for below R")
                 return BiometricAuthenticatorApi23(activity, listener)
             }
-            listener.onNewMessage("Providing instance for legacy biometric")
+            listener.onNewMessage("Providing instance for Api 30")
             return BiometricAuthenticatorApi30(activity, listener)
         }
     }
